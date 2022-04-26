@@ -6,7 +6,7 @@ services:
     networks:
       - app-net
     build:
-      context: /home/nhlan/Docker/hello-image
+      context: /home/Docker/hello-image
       dockerfile: Dockerfile
     expose:
       - 8080:8080
@@ -14,7 +14,7 @@ services:
   nginx:
     container_name: container_nginx
     build:
-      context: /home/nhlan/Docker/nginx-image
+      context: /home/Docker/nginx-image
       dockerfile: Dockerfile
     restart: always
     networks:
